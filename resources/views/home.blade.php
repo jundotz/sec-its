@@ -1,6 +1,10 @@
-@extends('layouts.main')
+@if (Auth::user()->hasRole('client'))
+{{-- @extends('layouts.cient') --}}
+@else
+    @extends('layouts.main')
+@endif
 
-@section('content')
+{{-- @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -20,4 +24,4 @@
         </div>
     </div>
 </div>
-@endsection
+@endsection --}}
