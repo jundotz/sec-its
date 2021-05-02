@@ -91,8 +91,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <Sidebar></Sidebar>
 
   <!-- Content Wrapper. Contains page content -->
-  <Maincontent></Maincontent>
+  <router-view></router-view>
   <!-- /.content-wrapper -->
+
 
   <!-- Main Footer -->
   <footer class="main-footer">
