@@ -88,14 +88,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <Sidebar></Sidebar>
+  <Sidebar :user-role-info="{{ auth()->user()->roles }}"></Sidebar>
 
   <!-- Content Wrapper. Contains page content -->
   <router-view></router-view>
   <!-- /.content-wrapper -->
 
-
-  <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">

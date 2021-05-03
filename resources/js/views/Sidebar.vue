@@ -1,5 +1,5 @@
 <template lang="">
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <aside class="main-sidebar custom-sidebar sidebar-dark-info elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link text-center">
       <img src="images/icons/sec-logo.png" alt="SEC Logo" class="brand-image" style="opacity: .8; float:none !important;">
@@ -78,7 +78,7 @@
 </template>
 <script>
 export default {
-    
+  props: ['user-role-info']  
 }
 </script>
 <style lang="">
