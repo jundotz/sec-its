@@ -15,13 +15,14 @@ const app = new Vue({
         }
     },
     mounted() {
-       this.getUser()
+       this.getUser();
     },
     methods: {
+        // refactor this to vuex!!
         async getUser() {
-            await axios.get('api/user')
+            await axios.get('api/user/role')
                 .then((ret)=>{
-                    console.log(ret.data);
+                    this.userRole = ret.data[0].name;
                 })
         }
     },
