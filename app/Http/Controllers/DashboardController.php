@@ -24,12 +24,13 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        if (Auth::user()->hasRole('client')) {
-            return view('dashboard.client');
-        } elseif(Auth::user()->hasRole('supervisor')){
-            return view('dashboard.supervisor');
-        } elseif(Auth::user()->hasRole('admin')){
-            return view('dashboard.admin');
-        }   
+        return view('main');
+        // if (Auth::user()->hasRole('client')) {
+        //     return view('dashboard.client');
+        // } elseif(Auth::user()->hasRole('supervisor')){
+        //     return view('dashboard.supervisor');
+        // } elseif(Auth::user()->hasRole('admin')){
+        //     return view('dashboard.admin');
+        // }   
     }
 }

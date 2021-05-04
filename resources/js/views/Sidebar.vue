@@ -60,7 +60,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link" @click="increment">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Users
@@ -78,7 +78,12 @@
 </template>
 <script>
 export default {
-  props: ['user-role-info']  
+  methods: {
+    increment(){
+      this.$store.commit('increment')
+      console.log(this.$store.state.count)
+    }
+  },
 }
 </script>
 <style lang="">
